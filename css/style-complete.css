@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*MOBILE CSS*/
+
+.navbar{
+    background-color: #000;
+    color: #d8d8d8;
+    border-bottom: 0.5px solid gray;
+    width: 100%;
+    flex-direction: column;
+    height: 15%;
+    font-size: 20px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    font-family: 'Karla';
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #d8d8d8;
+}
+
+.navbar a.nav-logo{
+    padding: 5px 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Karla';
+    color: #d8d8d8;
+    font-weight: bold;
+}
+.navbar ul{
+    list-style: none;
+    padding: 0 0 10px 0;
+}
+
+.navbar ul li a{
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 2px 30px;
+}
+
+body{
+    background-color: #000;
+}
+
+.content{
+    font-family: 'Karla';
+    color: #d8d8d8;
+    margin-top: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-align: justify;
+    padding: 0 5vw;
+}
+
+.content h1{
+    font-size: 60px;
+}
+
+.content p{
+    margin-top: 5vh;
+    padding: 0 5%;
+    font-size: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.btns{
+    margin-top: 25px;
+    background: #d8d8d8;
+    cursor: pointer;
+    color: #191919;
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.img-container img{
+    padding: 10vh 0;
+    width: 50vw;    
+}
+
+.project{
+    text-decoration: none;
+    color: #191919;
+    padding: 8px 15px;
+    background-color: #d8d8d8;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*PC CSS*/
+
+@media(min-width:720px){
+    .navbar{
+        background-color: #000;
+        color: #d8d8d8;
+        border-bottom: 0.5px solid gray;
+        width: 100%;
+        line-height: 80px;
+        height: 12vh;
+        font-size: 18px;
+        padding: 0 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: 'Karla';
+    }
+    
+    .navbar a{
+        text-decoration: none;
+        color: #d8d8d8;
+    }
+    
+    .navbar a.nav-logo{
+        float:left;
+        height: inherit;
+        line-height: inherit;
+        padding: 0 30px;
+        font-size: 40px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: 'Karla';
+        color: #d8d8d8;
+        font-weight: bold;
+    }
+
+    .navbar ul{
+        float: right;
+        list-style: none;
+        height: inherit;
+        line-height: inherit;
+        padding: 0 50px;
+        overflow: hidden;
+    }
+    
+    .navbar ul li{
+        display: inline-block;
+    }
+    
+    .navbar ul li a{
+        display: block;
+        text-align: center;
+        min-width: 120px;
+        padding: 0 30px;
+    }
+    
+    .navbar ul li a:hover{
+        background-color: gray;
+    }
+    
+    body{
+        background-color: #000;
+    }
+
+    .project:hover{
+        background-color: gray;
+    }
+    
+    .content{
+        margin-top: 0;
+        display: flex;
+        font-family: 'Karla';
+        color: #d8d8d8;
+        width: 100vw;
+        text-align: justify;
+        letter-spacing: 0.7px;
+        padding: 0 3.5vw;
+        height:calc(100vh - 12vh);
+    }
+    
+    .content h1{
+        font-size: 4vw;
+    }
+    
+    .content p{
+        margin-top: 3vw;
+        letter-spacing: 0.08vw;
+    }
+    
+    main{
+        margin-top: 12vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 12vh);
+    }
+    
+    .btns{
+        margin-top: 20px;
+        background: #d8d8d8;
+        cursor: pointer;
+        color: #191919;
+        padding: 12px 20px;
+        float: left;
+        border: 0;
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+    
+    .btns:hover{
+        background: #848482;
+    }
+
+    .nav-logo:hover{
+        animation: logo-ani 2s;
+    }
+
+    @keyframes logo-ani{
+        25%{
+            transform: rotateY(90deg);
+        }
+        50%{
+            transform: rotateY(180deg);
+        }
+        75%{
+            transform: rotateY(270deg);
+        }
+        100%{
+            transform: rotateY(360deg);
+        }
+    }
+
+    .info-ref{
+        font-weight: bold;
+        color: rgb(80, 77, 107);
+        text-decoration: none;
+    }
+}
